@@ -23,16 +23,16 @@ from bs4 import BeautifulSoup
 app = Flask(__name__)
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyAkAnUzwSeE_Xv_89IRJQy545bqkKuZIL0"  # Consider using environment variables
+GEMINI_API_KEY = "----"  # Consider using environment variables
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Initialize the Gemini model
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 # Configure APIs
-YOUTUBE_API_KEY = "AIzaSyAe9MqHF6Z0oV8e0qj0T-FhTuSj28-AQ44"  # Use environment variables
-GOOGLE_SEARCH_API_KEY = "94173181c3f7b45887d266b3d739c13505fa2d5c"  # Use environment variables
-GOOGLE_CSE_ID = "102209514661688191236"  # Use environment variables
+YOUTUBE_API_KEY = "---FhTuSj28-AQ44"  # Use environment variables
+GOOGLE_SEARCH_API_KEY = "--"  # Use environment variables
+GOOGLE_CSE_ID = "--"  # Use environment variables
 
 def extract_json(text):
     """Extracts JSON from a response that might contain extra text."""
